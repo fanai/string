@@ -1,10 +1,8 @@
 #include<string.h>
 #include <iostream>
-#include <string>
 using std::cout;
 using std::endl;
 using std::cin;
-using std::string;
 
 class String
 {
@@ -196,10 +194,13 @@ std::ostream & operator<<(std::ostream & os, const String & rhs)
 
 std::istream & operator>>(std::istream & is, String & rhs)
 {
-//	string tmp(rhs.c_str());
-	is >> rhs._pstr;
+	char buff[65536];//64K
+	is >> buff;
+	rhs._pstr = new char[strlen(buff) + 1];
+	strcpy(rhs._pstr, buff);
 	return is;
 }
+
 int main(void)
 {
 	String str1;
