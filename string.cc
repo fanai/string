@@ -1,3 +1,10 @@
+/******************************************************
+# Author       : fanai
+# Last modified: 2016-08-22 11:35:23
+# Email        : zfanai@163.com
+# Filename     : string.cc
+# Description  : 
+******************************************************/
 #include<string.h>
 #include <iostream>
 using std::cout;
