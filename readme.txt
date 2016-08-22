@@ -1,1 +1,2 @@
-create a file namede stream.cc 
+create a file namede stream.cc.
+update string file.
